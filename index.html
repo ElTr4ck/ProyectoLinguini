@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LIBRERIA Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>A la Linguini</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/images/LinguiniLogoLight.png" width="50" height="50" class="d-inline-block align-top"
+                alt="">
+            <span class="ml-2">A La Linguini</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/login.html">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tarjeta principal -->
+    <section class="leading">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="display-4">Un recetario hecho por y para ti</h1>
+                    <p class="lead">Conoce nuestro sitio en donde podrás consultar y compartir recetas de cocina con una
+                        gran comunidad.</p>
+                    <!-- Barra de búsqueda -->
+                    <form action="" method="get">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Buscar recetas..." name="search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="assets/images/leading.jpg" class="img-fluid" alt="Linguini">
+                </div>
+            </div>
+    </section>
+
+    <!-- Sección de recetas destacadas -->
+    <section class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <p class="mini-text">Nuestra selección</p>
+                    <h2 class="libre-franklin">Siente los sabores</h2>
+                    <p>Explora las creaciones de nuestra comunidad mas populares y guiate para hacer tus propias
+                        recetas.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/featured/featured-1.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Margarita</h5>
+                            <p class="card-text">Salsa de tomate, queso mozzarella fresco y especias</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/featured/featured-2.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Spaghetti Carbonara</h5>
+                            <p class="card-text">Panceta, huevo, queso pecorino romano y pimienta</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/featured/featured-3.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Galletas de mazapan</h5>
+                            <p class="card-text">Almendras, azúcar, mazapán y huevo</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/featured/featured-4.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Coctél Tom Collins</h5>
+                            <p class="card-text">Ginebra, limón, azúcar y soda o agua gasificada</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de últimas recetas -->
+    <section class="latest">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <p class="mini-text">Últimas novedades</p>
+                    <h2 class="libre-franklin">Lo último de la comunidad</h2>
+                    <p>Explora las creaciones más recientes de nuestra comunidad de mini-chefs y experimenta en la
+                        cocina</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/latest/latest-1.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Ternera a la jardinera</h5>
+                            <p class="card-text">Ternera, especias, verduras frescas y aceite de olivo</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/latest/latest-2.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Champiñones al Ajillo</h5>
+                            <p class="card-text">Champiñones, ajo, limón, aceite y sal</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/latest/latest-3.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Churros Caseros</h5>
+                            <p class="card-text">Harina de trigo, agua, sal, azúcar y aceite</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <img src="assets/images/latest/latest-4.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Curry de verduras</h5>
+                            <p class="card-text">Una delicia saludable para disfrutar de la cocina india</p>
+                            <button>Ver más..</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de acerca de nosotros -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mini-text">Sobre Nosotros</p>
+                    <h2 class="libre-franklin">Nuestro deber con la cocina</h2>
+                    <p>En A La Linguini, creemos que la cocina es un arte que merece ser compartido y celebrado por
+                        todos. Nuestro sitio nació de la pasión por la comida italiana y la convicción de que las
+                        mejores recetas no provienen solo de grandes chefs, sino de las cocinas de personas comunes que
+                        ponen amor y dedicación en cada plato que preparan.
+                    </p>
+                </div>
+            </div>
+            <!-- Carrusel TODO; Arreglarlo ya que no funciona -->
+            <div id="carouselExampleControls" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Alan.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Alan</h5>
+                                <p class="card-text">Fundador y CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Gustavo.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Gustavo</h5>
+                                <p class="card-text">Cofundador</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Anette.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Anette</h5>
+                                <p class="card-text">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Miguel.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Miguel</h5>
+                                <p class="card-text">Proveedor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Maria.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">María</h5>
+                                <p class="card-text">Proveedor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Cynthia.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cynthia</h5>
+                                <p class="card-text">Mantenimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="assets/images/team/Carlos.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Carlos</h5>
+                                <p class="card-text">Soporte</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mini-text">A La Linguini</p>
+                    <p>© 2022 Todos los derechos reservados</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tu_usuario" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/tu_usuario" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tu_usuario" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@tu_usuario" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- LIBRERIAS Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

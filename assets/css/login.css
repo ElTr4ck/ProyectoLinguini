@@ -1,0 +1,48 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
+}
+
+.login label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login a{
+    color: #D32F2F;
+    text-decoration: none;
+}
+
+.login a:hover{
+    color: #388E3C;
+}
+
+.login button{
+    background-color: #D32F2F;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho del elemento */
+}
+
+.login button:hover{
+    background-color: #388E3C;
+    transition: ease-in-out 0.5s;
+}
+
+.login button::after{
+    background-color: #D32F2F;
+}
+
+.login .register{
+    margin-top: 20px;
+    text-align: center;
+}
